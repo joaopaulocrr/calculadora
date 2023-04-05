@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
@@ -14,46 +14,52 @@
 
     <main>
         <div id="res">
-
+           
         </div>
 
         <table>
             <tbody>
-                <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>/</td>
+
+                <tr class="cinza-escuro">
+                    <td rowspan="2" onclick="limpartudo()">AC</td>
+                    <td class="cinza-claro" id="sete" onclick="insert('7')">7</td>
+                    <td class="cinza-claro" id="oito" onclick="insert('8')">8</td>
+                    <td class="cinza-claro" id="nove" onclick="insert('9')">9</td>
+                    <td id="divisão">/</td>
                 </tr>
 
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>x</td>
+                    
+                    <td class="cinza-claro" id="quatro" onclick="insert('4')" >4</td>
+                    <td class="cinza-claro" id="cinco" onclick="insert('5')" >5</td>
+                    <td class="cinza-claro" id="seis" onclick="insert('6')" >6</td>
+                    <td class="cinza-escuro" id="vezes" onclick="insert('*')">x</td>
                 </tr>
 
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>-</td>
+                    <td class="cinza-escuro" rowspan="2"  id="limpar" onclick="limpar()">C</td>
+                    <td class="cinza-claro" id="um" onclick="insert('1')">1</td>
+                    <td class="cinza-claro" id="dois" onclick="insert('2')">2</td>
+                    <td class="cinza-claro" id="tres" onclick="insert('3')">3</td>
+                    <td class="cinza-escuro" id="menos" onclick="insert('-')">-</td>
                 </tr>
 
                 <tr>
-                    <td>0</td>
-                    <td>.</td>
-                    <td>=</td>
-                    <td>+</td>
+                    
+                    <td class="cinza-claro" id="zero" onclick="insert('0')">0</td>
+                    <td class="cinza-claro" id="ponto" onclick="insert('.')">.</td>
+                    <td class="cinza-claro" id="igual">=</td>
+                    <td class="cinza-escuro" id="mais" onclick="insert('+')">+</td>
+                   
                 </tr>
             </tbody>
         </table>
     </main>
 
     <footer>
-        <p>&copysr;JoãoPaulo</p>
+        <p>&copy;JoãoPaulo</p>
     </footer>
 
-    <script src="script/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
