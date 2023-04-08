@@ -24,7 +24,7 @@ header h1 {
 }
 
 main {
-    width: 400px;
+    width: 350px;
     background-color: rgb(63, 61, 61);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -73,19 +73,21 @@ main table {
 }
 
 main table tbody tr td {
-    width: 80px;
-    height: 50px;
+    width: 70px;
+    height: 60px;
     text-align: center;
-    margin: 3px;
     cursor: pointer;
 }
 main table tbody tr td:hover {
     background-color: rgb(221, 121, 121);
-    
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 footer p {
     font-size: 26px;
     font-style: italic;
     font-weight: bold;
+    color: white;
 }
